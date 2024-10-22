@@ -1,0 +1,125 @@
+
+.container{ 
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    margin-top: 100px;
+    margin-top: 50px; /* This adds space above the card */
+}
+.card-body{
+    background-color: #093824;
+}
+.card-text{
+    background-color: #C2E7D9;
+    color: #2E282A;
+
+}
+.card-title{
+    background-color: white;
+    color: black;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background: radial-gradient(#480d35, #17151d);
+  display: grid;
+  place-items: center;
+}
+h1 {
+    border: 6px double white;
+    background-color: black;
+    margin-left: -10rem;
+    margin-bottom: 50px; /* This adds space below the h1 */
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    color: #CBF3D2;
+    font-size: 40px;
+}
+h1:hover {
+  text-shadow: 0.05em 0 0 #ec2225, -0.025em -0.05em 0 #313f97,
+    0.025em 0.05em 0 #50c878;
+    color: rgba(0, 194, 203, 0.2);
+}
+h1:before,
+h1:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+}
+h1:hover::before {
+  animation: glitch 650ms infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+  transform: translate(-0.025em, -0.0125em);
+}
+h1:hover::after {
+  animation: glitch 375ms infinite;
+  clip-path: polygon(0 65%, 100% 20%, 100% 100%, 0 70%);
+  transform: translate(0.0125em, 0.025em);
+}
+@keyframes glitch {
+  0% {
+    color: rgba(236, 34, 37, 0.2);
+    text-shadow: 0.05em 0 0 #ec2225, -0.025em -0.05em 0 #313f97,
+      0.025em 0.05em 0 #50c878;
+  }
+  14% {
+    text-shadow: 0.05em 0 0 #ec2225, -0.025em -0.05em 0 #313f97,
+      0.025em 0.05em 0 #50c878;
+  }
+  15% {
+    color: #50c878;
+    text-shadow: -0.05em -0.025em 0 #ec2225, 0.025em -0.025em 0 #313f97,
+      -0.05em -0.05em 0 #50c878;
+  }
+  49% {
+    text-shadow: -0.05em -0.025em 0 #ec2225, 0.025em -0.025em 0 #313f97,
+      -0.05em -0.05em 0 #50c878;
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 #ec2225, -0.025em 0.05em 0 #313f97,
+      0 -0.05em 0 #50c878;
+  }
+  99% {
+    color: #313f97;
+    text-shadow: 0.025em 0.05em 0 #ec2225, -0.025em 0.05em 0 #313f97,
+      0 -0.05em 0 #50c878;
+  }
+  100% {
+    text-shadow: -0.025em 0 0 #ec2225, -0.025em -0.025em 0 #313f97,
+      -0.025em -0.05em 0 #50c878;
+  }
+}
+
+.heading{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90rem;
+}
+
+.heading h1 {
+    border: 6px solid red;
+    margin-bottom: 30px; /* Add some space below the first h1 */
+}
+
+.titlee {
+    margin-left:120px;
+    margin-bottom: 20px; /* Add some space below the second h1 */
+}
+
+.card {
+    margin-top: 20px; /* Space between card and text above */
+}
